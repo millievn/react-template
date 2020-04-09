@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "stylelint-config-sass-guidelines",
+    "stylelint-8-point-grid",
+    "stylelint-config-rational-order",
+    "stylelint-prettier/recommended"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin",
+    "stylelint-no-unused-selectors",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "unicode-bom": "never",
+    "order/order": ["dollar-variables", "custom-properties", "at-variables", "declarations", "rules", "at-rules"],
+    "order/properties-alphabetical-order": false,
+    "plugin/rational-order": [
+      true,
+      {
+        "border-in-box-model": false,
+        "empty-line-between-groups": false
+      }
+    ],
+    "plugin/8-point-grid": {
+      "base": 4,
+      "whitelist": ["2px", "1px"],
+      "ignore": ["width", "height"]
+    },
+    "plugin/no-unused-selectors": true
+  }
+}
