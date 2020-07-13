@@ -41,7 +41,7 @@
     "husky": ">=4",
     "lint-staged": ">=10",
     "prettier": "^2.0.4",
-    "standard-version": "^7.1.0",
+    "standard-version": "^8.0.1",
     "stylelint": "^13.3.0",
     "stylelint-8-point-grid": "^0.2.4",
     "stylelint-config-prettier": "^8.0.1",
